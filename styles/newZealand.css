@@ -1,0 +1,20 @@
+.navbar{
+    background-color: ;
+} 
+.flex-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+.flex-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+body{
+    color: white;
+   background-color: #012169;
+    /* background: url(https://i.guim.co.uk/img/media/d369f85a81b6d187c7e11322b8fd0322dcac165d/7_0_4119_2067/4119.jpg?width=620&quality=85&dpr=1&s=none); */
+}
