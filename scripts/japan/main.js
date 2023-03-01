@@ -1,4 +1,4 @@
-const country /*(jamaica, japan, mexico, newZealand)*/ = {
+const brazil /*(jamaica, japan, mexico, newZealand)*/ = {
 
     countryImage: ,
     city: [

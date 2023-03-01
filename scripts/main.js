@@ -1,0 +1,1 @@
+// import each country and print them in index.html; only link one script file to an html file, not multiple
