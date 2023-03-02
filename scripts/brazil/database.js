@@ -55,10 +55,10 @@ const brazil = {
     ]
 }
 
-export const getBrazilCity = () => {
+export const getBrazilCity = () =>{
     return brazil.city.map(copyOfCityObject => ({...copyOfCityObject}))
 }
 
-export const getBrazilCeleb = () => {
+export const getBrazilCeleb = () =>{
     return brazil.celebrity.map(copyOfCelebrityObject => ({...copyOfCelebrityObject}))
 }
