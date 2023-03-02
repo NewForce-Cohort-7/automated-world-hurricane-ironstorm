@@ -1,6 +1,6 @@
 const mexico /*(jamaica, japan, mexico, newZealand)*/ = {
 
-    countryImage: ,  
+    // countryImage: ,  
     city: [
         {
             name: "Mexico City",
@@ -50,3 +50,18 @@ const mexico /*(jamaica, japan, mexico, newZealand)*/ = {
     
     ]
 }
+
+export const getMexCity = () =>{
+    return mexico.city.map(copyOfCityObject => ({...copyOfCityObject}))
+}
+export const getCelebrity  = () =>{
+    return mexico.celebrity.map(copyOfCityObject => ({...copyOfCityObject}))
+}
+
+
+
+//  export const getMexceleb = () =>{
+//         return mexCity.celebrity.
+// }
+
+
