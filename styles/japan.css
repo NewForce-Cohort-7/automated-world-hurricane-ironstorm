@@ -1,0 +1,11 @@
+body {background-color: firebrick;}
+
+header {
+    font-size: xx-large; text-align: center; background-color: azure; margin: 10px;
+}
+
+img {
+    width: 20%;
+    height: auto;
+  }
+
