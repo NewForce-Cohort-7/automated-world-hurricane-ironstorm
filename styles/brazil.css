@@ -1,0 +1,22 @@
+body {
+    background-color: #c0eef7;
+    margin: 0%;
+}
+
+.image {
+    background-image: url(https://i.imgur.com/E4qwQfM.png);
+    background-size: cover;
+    height: 200px;
+   
+}
+
+.landmark__image {
+    height: 300px;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-container2 {
+    margin: 50px;
+}
