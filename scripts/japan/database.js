@@ -54,10 +54,10 @@ const japan /*(jamaica, japan, mexico, newZealand, Brazil)*/ = {
     ]
 }
 
-export const cityList = () => {
-    return database.city.map(copyOfSingleCityObject => ({...copyOfSingleCityObject}))
+export const getCity = () => {
+    return japan.city.map(copyOfSingleCityObject => ({...copyOfSingleCityObject}))
 }
 
-export const celberityList = () => {
-    return database.celebrity.map(copyOfSingleCelberityObject => ({...copyOfSingleCelberityObject}))
+export const getCelberity = () => {
+    return japan.celebrity.map(copyOfSingleCelberityObject => ({...copyOfSingleCelberityObject}))
 }

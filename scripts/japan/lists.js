@@ -1,19 +1,19 @@
-import {cityList} from './database.js'
+import { getCity } from './database.js';
 
 export const cityList = () => {
-    // Invoke the function that you imported from the database module
-    const importCity = country()
+    const importCity = getCity()
 
-    // Start building a string filled with HTML syntax
-    let htmlString = '<section class="japan.js">'
+    let htmlString = '<article class="japanMain">'
 
-    // Create HTNL representations of each fish here
-    for (const singleCityObject of importCity) {
+    for (const City of importCity) {
 
         htmlString += `<section class= >
-            <section class = "japanCity"> city 1 </section>
-            <section class = "japanCity"> city 2 </section>
-            <section class = "japanCity"> city 3 </section>   
+            <div><img class="city_image image--card" src="${City.cityImage}" /></div>
+            <div class= "city_name">${City.name}</div>
+            <div class="city__population">${City.population}</div>
+            <div class="city__landmark">${City.landmark}</div>
+            <div class="city__landmarkImage image--card" src="${City.landmarkImage}" /></div>
+        </section>   
 `
     }
     htmlString += `</article>`
@@ -21,19 +21,24 @@ export const cityList = () => {
     return htmlString
 }
 
-import {celberityList} from `database.js`
+import {getCelberity} from './database.js'
 
 export const celberityList = () => {
-    const importCelebrity = country()
+    const importCelebrity = getCelberity()
 
-    let htmlString = `<article class = "japanCelebrities">`
+    let htmlStringCelebs = '<article class="japanCelebrities">'
 
-    for (const singleCelebrityObject of importCelebrity)
+    for (const Celebrity of importCelebrity) {
 
-    `<section class = "japanCelberity"> celebrity 1 </section>
-    <section class = "japanCelebrity"> celebrity 2 </section>
-    <section class = "japanCelebtiry"> celebrity 3 </section>`
+htmlStringCelebs += 
+    ` <div class="celeb__image image--card" /><img src="${Celebrity.celebrityImage}" alt=""></div>
+    <div class="celeb__name">${Celebrity.name}</div>
+    <div class="celeb__famous>${Celebrity.famous}</div>
+    <div class="celeb__birth>${Celebrity.birth}</div>
+    <div class="celeb__death>${Celebrity.death}</div>
+    </section>`
+    }
+    htmlStringCelebs += `</article>`
 
-    htmlString += `<article>`
-
+    return htmlStringCelebs
 }
