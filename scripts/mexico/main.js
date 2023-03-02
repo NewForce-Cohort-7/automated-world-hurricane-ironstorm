@@ -1,52 +1,29 @@
-const country /*(jamaica, japan, mexico, newZealand)*/ = {
+import { celebList} from './citieslists.js'
+const parentHTMLElementMexCeleb= document.querySelector(".flex-container2")
+parentHTMLElementMexCeleb.innerHTML = celebList()
 
-    countryImage: ,
-    city: [
-        {
-            name: -,
-            population: -,
-            landmark: -,
-            landmarkImage:-,
-        },
-        {
-    
-            name: -,
-            population: -,
-            landmark: -,
-            landmarkImage:-,
-        },
-        {
-            name: -,
-            population: -,
-            landmark: -,
-            landmarkImage:-,
-    
-        },
-    ],
-    
-    celebrity: [
-        {
-            name: -,
-            famous: "can be a longer string",
-            birth:-,
-            death:-,
-            celebrityImage:-,
-        },
-        {
-            name: -,
-            famous: "can be a longer string",
-            birth:-,
-            death:-,
-            celebrityImage:-,
-        },
-        {
-            name: -,
-            famous: "can be a longer string",
-            birth:-,
-            death:-,
-            celebrityImage:-,
-        },
-    
-    
-    ]
-}
+
+
+
+
+// const (getMexCity)()
+// import { getMexceleb} from './database.js'
+
+// const (getMexCity)()
+
+
+
+
+
+
+import { cityList } from './citieslists.js'
+
+const parentHTMLElementNZCities = document.querySelector(".flex-container1")
+
+parentHTMLElementNZCities.innerHTML = cityList()
+
+// import { celebList } from '.celebList'
+
+// const parentHTMLElementNZCelebs = document.querySelector(".flex-container2")
+
+// parentHTMLElementNZCelebs.innerHTML = celebList()
