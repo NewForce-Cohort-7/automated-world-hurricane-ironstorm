@@ -26,6 +26,7 @@
    text-align: center;
    padding: 1em;
    align-items: center;
+   background-color: #012169;
 }
 
 .flex-container2 {
@@ -49,9 +50,9 @@
 body{
     color: white;
    background-color: #012169;
-   /* background: url(https://i.imgur.com/TaG4MfM.png);
-   background-size: contain;
-   background-repeat: no-repeat; */ 
+   background: url(https://i.imgur.com/6NXMWZn.jpeg);
+   background-size: cover;
+   background-repeat: no-repeat; 
    
 }
 img{
