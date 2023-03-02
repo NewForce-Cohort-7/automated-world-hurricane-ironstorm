@@ -6,14 +6,18 @@ export const cityList = () => {
     
     const importCity = getJamCity()
 
-    let htmlStringCities = '<article class="jamaicaMain">'
+    let htmlStringCities = '<article class="JamFlex-container1">'
 
-    for (const singleCityObject of importCity) {
+    for (const city of importCity) {
 
-         htmlStringCities += `<section class="JamCityCard"> city 1 </section>
-        <div class="population"> 
-<section class="jamaicaCity"> city 2 </section>
-<section class="jamaicaCity"> city 3 </section>`
+         htmlStringCities += `<section class="JamCity-card">
+         <img src="${city.cityImage}" alt="">
+         <div class="city__name">${city.name}</div>
+         <div class="city__population">Population:${city.population}</div>
+         <img src="${city.landmarkImage}" alt="${city.landmark}">
+         <div class="city__landmark">${city.landmark}</div>
+     </section>   
+`
     }
     htmlStringCities += `</article>`
 
@@ -28,18 +32,18 @@ export const celebrityList = () => {
     
     const importCelebrity = getJamCelebrity()
 
-    let htmlStringCelebrities = '<article class="jamaicaCelebrities">'
+    let htmlStringCelebrities = '<article class="JamFlex-container2">'
 
-    for (const singleCelebrityObject of importCelebrity) {
+    for (const celebrity of importCelebrity) {
 
-//         htmlString += `
-//         <section class="jamaicaCelebrity"><img src ="" alt=""> First Celeb</section>
-//         <section class="jamaicaCelebrity"><img src ="" alt=""> Second Celeb</section>
-//         <section class="jamaicaCelebrity"><img src ="" alt=""> Third Celeb</section>
-// `
-`<section class="jamaicaCelebrity"> celebrity 1 </section>
-<section class="jamaicaCelebrity"> celebrity 2 </section>
-<section class="jamaicaCelebrity"> celebrity 3 </section>`
+         htmlStringCelebrities += `<section class="JamCeleb card">
+            <img src="${celebrity.celebrityImage}" alt="">
+            <div class="celeb__name">${celebrity.name}</div>
+            <div class="celeb__famous">${celebrity.famous}</div>
+            <div class="celeb__birth">${celebrity.birth}</div>
+            <div class="celeb__death">${celebrity.death}</div>
+            </section>
+`
     }
     htmlStringCelebrities += `</article>`
 
