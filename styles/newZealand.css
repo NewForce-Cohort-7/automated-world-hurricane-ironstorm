@@ -1,20 +1,86 @@
 .navbar{
-    background-color: ;
+    background-color: #FFFF;
+    font-size: large;
 } 
 .flex-container1 {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
-
+    margin: 1em;
+    flex-direction: column;
+    flex-basis: 85%;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid white;
+    
 
 }
+.city-container1{
+    justify-content: space-evenly;
+   display: flex;
+   margin: .5em;
+   flex-direction: row;
+   flex-wrap: wrap;
+   flex-basis: 85%;
+   font-size: 18px;
+   text-align: center;
+   padding: 1em;
+   align-items: center;
+}
+
 .flex-container2 {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    flex-basis: 90%;
+    flex-direction: column;
+}
+.celeb-container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1em;
+    flex-direction: column;
+    flex-basis: 100%;
+    font-size: 18px;
+    text-align: initial;
+    
 }
 body{
     color: white;
    background-color: #012169;
-    /* background: url(https://i.guim.co.uk/img/media/d369f85a81b6d187c7e11322b8fd0322dcac165d/7_0_4119_2067/4119.jpg?width=620&quality=85&dpr=1&s=none); */
+   /* background: url(https://i.imgur.com/TaG4MfM.png);
+   background-size: contain;
+   background-repeat: no-repeat; */ 
+   
+}
+img{
+    width: 290px;
+    height: auto;
+}
+header{
+    font-size: larger;
+    background-color: #C8102E;
+}
+.nZCity {
+    width: 30%;
+}
+.nZCeleb {
+    width: 30%;
+    border: 1px solid white;
+    margin: 3em;
+    display: flex;
+    flex-flow: row wrap;
+}
+.celeb__name{
+    font-size: larger;
+}
+.celeb__info{
+    display: flex;
+    flex-flow: row;
+    color: #C8102E;
+    margin-left: 22%;
+}
+.celeb__image{
+    display: flex;
 }

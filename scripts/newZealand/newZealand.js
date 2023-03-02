@@ -10,9 +10,9 @@ const allCities = getNZCity()
 
 const allCelebs = getNZCeleb()
 
-// for (const nZCeleb of allCelebs) {
-//     console.log(nZCeleb)
-// }
+for (const nZCeleb of allCelebs) {
+    console.log(nZCeleb)
+}
 
 
 
